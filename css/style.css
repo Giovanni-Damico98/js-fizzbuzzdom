@@ -1,0 +1,46 @@
+/* Color palette */
+:root {
+    --darkblue: #083b4c;
+    --lightblue: #1389b2;
+    --green: #0bd6a1;
+    --yellow: #ffd166;
+    --red: #f0466f;
+  }
+  
+  body {
+    color: #fff;
+    background-color: #083b4c !important;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  li {
+    width: 90px;
+    height: 100px;
+    background-color: var(--lightblue);
+    border: 5px solid var(--darkblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+  }
+  
+  ul li.fizz {
+    background-color: var(--yellow);
+  }
+  
+  ul li.buzz {
+    background-color: var(--green);
+  }
+  
+  ul li.fizzbuzz {
+    background-color: var(--red);
+  }
+  
